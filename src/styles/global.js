@@ -36,8 +36,7 @@ body {
 }
 
 .words {
-    font-size: 24px;
-    font-family: cursive;
+    font-size: 30px;
     display: flex;
     flex-wrap: wrap;
     color: ${({theme}) => theme.typeBoxText};
@@ -76,7 +75,7 @@ body {
         25% {border-right-color: transparent}
         50% {border-right-color: ${({theme}) => theme.typeBoxText}}
         75% {border-right-color: transparent}
-        100% {border-right-color: ${({theme}) => theme.typeBoxText}}
+        100% {border-right-color: ${({theme}) => theme.typeBoxText}};
     }
 }
 
@@ -104,7 +103,7 @@ body {
 }
 
 .time-mode:hover {
-    color: #FFDEB9;
+    color: ${({theme}) => theme.typeBoxText};
     cursor: pointer;
 }
 
@@ -154,7 +153,6 @@ body {
     margin: auto;
     display: flex;
     height: 15rem;
-    // background-color: ${({theme})=> theme.typeBoxText};
     border-radius: 20px;
     padding: 1rem;
     justify-content: center;
@@ -199,6 +197,16 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+}
+
+.links {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+}
+
+a {
+    color: ${({theme}) => theme.textColor};
 }
 
 `

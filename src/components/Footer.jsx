@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Select from 'react-select';
 import { themeOptions } from '../utils/themeOptions';
 import { useTheme } from '../context/ThemeContext';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer = () => {
 
@@ -15,7 +18,15 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='links'>
-                Links
+                <div>
+                    <a href='https://www.linkedin.com/in/theanushka-v18/' target='_blank'><LinkedInIcon /></a>
+                </div>
+                <div>
+                    <a href='https://github.com/theanushka-v18' target='_blank'><GitHubIcon /></a>
+                </div>
+                <div>
+                    <a href='https://twitter.com/theanushka_v18' target='_blank'><TwitterIcon /></a>
+                </div>
             </div>
             <div className='themeButton'>
                 <Select
